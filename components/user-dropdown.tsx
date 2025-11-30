@@ -9,7 +9,6 @@ interface UserDropdownProps {
 
 export default function UserDropdown({ onLogout }: UserDropdownProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const [username, setUsername] = useState("")
 
   const handleLogout = async () => {
     try {
@@ -26,20 +25,6 @@ export default function UserDropdown({ onLogout }: UserDropdownProps) {
     }
   }
 
-  // Get username from localStorage
-  const getUserName = () => {
-    const user = localStorage.getItem("user")
-    if (user) {
-      try {
-        const userData = JSON.parse(user)
-        console.log("User data:", userData)
-        return userData.username || "User"
-      } catch {
-        return "User"
-      }
-    }
-    return "User"
-  }
 
   return (
     <div className="relative">
