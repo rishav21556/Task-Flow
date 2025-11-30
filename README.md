@@ -110,13 +110,9 @@ npm run start    # Start production server
 npm run lint     # Run ESLint
 ```
 
-## 📝 License
-
-[Your License]
-
 ## 👥 Contributors
 
-[Your Name/Team]
+Rishav Raj
 
 ## 📞 Support
 
