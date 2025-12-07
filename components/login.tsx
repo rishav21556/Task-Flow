@@ -78,7 +78,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
               <Input
                 id="username"
                 type="text"
-                placeholder="johndoe"
+                // placeholder="johndoe"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 className="mt-2 bg-input/50"
@@ -91,7 +91,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
               <Input
                 id="password"
                 type="password"
-                placeholder="••••••••"
+                // placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="mt-2 bg-input/50"
@@ -108,7 +108,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full mt-6 h-10 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-200"
+              className="cursor-pointer w-full mt-6 h-10 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-200"
             >
               {loading ? "Loading..." : isSignup ? "Sign Up" : "Sign In"}
             </Button>
@@ -124,7 +124,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
                   setUsername("")
                   setPassword("")
                 }}
-                className="text-primary hover:underline font-semibold transition-colors"
+                className="text-primary hover:underline font-semibold transition-colors cursor-pointer"
               >
                 {isSignup ? "Sign In" : "Sign Up"}
               </button>
